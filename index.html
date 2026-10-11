@@ -19,18 +19,19 @@
         tabindex="-1"
         class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
         <li>
-          <a>Services</a>
+          <a href="#services">Services</a>
           <ul class="p-2">
-            <li><a>n8n</a></li>
-            <li><a>immich</a></li>
+            <li><a href="#services">n8n</a></li>
+            <li><a href="#services">immich</a></li>
+            <li><a href="#services">Pelican</a></li>
           </ul>
         </li>
-        <li><a>Minecraft</a></li>
+        <li><a href="#minecraft">Minecraft</a></li>
         <li><a>Download Center</a></li>
-        <li><a>Kontakt</a></li>
+        <li><a href="#contact">Kontakt</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost text-xl">Jan Amrhein</a>
+    <a class="btn btn-ghost text-xl" href="https://janamrhein.ch/">Jan Amrhein</a>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
@@ -38,14 +39,15 @@
         <details>
           <summary>Services</summary>
           <ul class="p-2 bg-base-100 w-40 z-1">
-            <li><a>n8n</a></li>
-            <li><a>immich</a></li>
+            <li><a href="#services">n8n</a></li>
+            <li><a href="#services">immich</a></li>
+            <li><a href="#services">Pelican</a></li>
           </ul>
         </details>
       </li>
-      <li><a>Minecraft</a></li>
+      <li><a href="#minecraft">Minecraft</a></li>
       <li><a>Download Center</a></li>
-      <li><a>Kontakt</a></li>
+      <li><a href="#contact">Kontakt</a></li>
     </ul>
   </div>
   <div class="navbar-end">
@@ -90,17 +92,18 @@
 </div>
 
 <!-- ===================  Status  =========================-->
-  <div class="text-center w-full">
+  <div class="text-center w-full" id="services">
       <h1 class="text-5xl font-bold mt-8">Services</h1>
       <div class="indicator m-8 w-[calc(100%-4rem)]">
-        <span class="indicator-item badge badge-success">Online</span>
-        <div class="bg-base-200 rounded-box border-2 border-success items-start text-left p-4 w-full">
-          <h2 class="text-xl font-bold mb-2">Server 1</h2>
+        <div class="bg-base-200 rounded-box border-2 border-warning items-start text-left p-4 w-full">
+          <h2 class="text-xl font-bold mb-2">Server 1
+            <div class="badge badge-warning">Unbekannt</div>
+          </h2>
           <div class="flex flex-wrap gap-4 w-full p-4">
             <!-- ==========  Card  ========= -->
-            <div class="aura text-success">
+            <div class="">
               <a href="https://immich.janamrhein.ch/">
-                <div class="card bg-base-100 w-80 h-[250px] text-base-content shadow-sm">
+                <div class="card bg-base-100 max-w-80 min-h-[250px] text-base-content shadow-sm">
                   <figure>
                     <img src="src/assets/logos/immich.svg" class="block dark:hidden h-22 mt-2" alt="Immich Logo" />
                     <img src="src/assets/logos/immich-dark.svg" class="hidden dark:block" alt="Immich Logo" />
@@ -108,7 +111,7 @@
                   <div class="card-body">
                     <h2 class="card-title">
                       Immich
-                      <div class="badge badge-success">Online</div>
+                      <div class="badge badge-warning">Unbekannt</div>
                     </h2>
                     <p>Self-hosted photo and video management solution</p>
                     <div class="card-actions justify-end">
@@ -119,9 +122,9 @@
             </div>
 
             <!-- ==========  Card  ========= -->
-            <div class="aura text-success">
+            <div class="">
               <a href="https://n8n.janamrhein.ch/">
-                <div class="card bg-base-100 w-80 h-[250px] text-base-content shadow-sm">
+                <div class="card bg-base-100 max-w-80 min-h-[250px] text-base-content shadow-sm">
                   <figure>
                     <img src="src/assets/logos/n8n.svg" class="block dark:hidden h-20 mt-4" alt="n8n Logo" />
                     <img src="src/assets/logos/n8n-dark.svg" class="hidden dark:block h-20 mt-4" alt="n8n Logo" />
@@ -129,7 +132,7 @@
                   <div class="card-body">
                     <h2 class="card-title">
                       n8n
-                      <div class="badge badge-success">Online</div>
+                      <div class="badge badge-warning">Unbekannt</div>
                     </h2>
                     <p>Self-hosted AI agents and workflow automation platform</p>
                     <div class="card-actions justify-end">
@@ -140,16 +143,16 @@
             </div>
 
             <!-- ==========  Card  ========= -->
-            <div class="aura text-success">
+            <div class="">
               <a href="https://minecraft.janamrhein.ch/">
-                <div class="card bg-base-100 w-80 h-[250px] text-base-content shadow-sm">
+                <div class="card bg-base-100 max-w-80 min-h-[250px] text-base-content shadow-sm">
                   <figure>
                     <img src="src/assets/logos/pelican.svg" class="h-20 mt-4" alt="Pelican Logo" />
                   </figure>
                   <div class="card-body">
                     <h2 class="card-title">
                       Pelican panel
-                      <div class="badge badge-success">Online</div>
+                      <div class="badge badge-warning">Unbekannt</div>
                     </h2>
                     <p>Weboberfläche um Minecraft-Server zu erstellen, steuern und managen</p>
                     <div class="card-actions justify-end">
@@ -166,16 +169,16 @@
   </div>
 
 <!-- =================  Minecraft  ========================= -->
-<div class="min-h-screen">
+<div id="minecraft">
   <video autoplay muted loop src="src/assets/minecraft.mp4"></video>
   <div class="flex justify-between items-center p-8">
     <h1 class="text-5xl font-bold">Minecraft Server</h1>
-    <div class="badge badge-error badge-xl">Offline</div>
+    <div class="badge badge-warning badge-xl">Unbekannt</div>
   </div>
 </div>
 
 <!-- =================  Kontakt  ========================= -->
-<div class="hero bg-base-200 min-h-screen">
+<div class="hero bg-base-200 min-h-screen" id="contact">
   <div class="hero-content flex-col lg:flex-row-reverse">
     <div class="text-center lg:text-left">
       <h1 class="text-5xl font-bold">Kontakt</h1>
@@ -203,10 +206,10 @@
 <!-- =================  Footer  ========================= -->
 <footer class="footer footer-horizontal footer-center rounded p-10">
   <nav class="grid grid-flow-col gap-4">
-    <a class="link link-hover">Services</a>
-    <a class="link link-hover">Minecraft</a>
+    <a class="link link-hover" href="#services">Services</a>
+    <a class="link link-hover" href="#minecraft">Minecraft</a>
     <a class="link link-hover">Download Center</a>
-    <a class="link link-hover">Kontakt</a>
+    <a class="link link-hover" href="#contact">Kontakt</a>
   </nav>
   <nav>
     <div class="grid grid-flow-col gap-8">
@@ -260,6 +263,14 @@
 
   themeController.addEventListener("change", updateTheme);
   updateTheme();
+</script>
+<script>
+  window.addEventListener("load", () => {
+    window.scrollTo({
+      top: 65,
+      behavior: "instant"
+    });
+  });
 </script>
   </body>
 </html>
