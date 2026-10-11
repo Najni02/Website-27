@@ -6,6 +6,6 @@ export default defineConfig({
     tailwindcss()
   ],
   server: {
-    //host: true, // Lässt Vite im LAN lauschen
+    host: true, // Lässt Vite im LAN lauschen
   },
 });

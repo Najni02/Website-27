@@ -90,28 +90,27 @@
 </div>
 
 <!-- ===================  Status  =========================-->
-<div class="hero bg-base-200 border-base-300 rounded-box border p-4 m-8 w-[calc(100%-4rem)]">
-  <div class="hero-content text-center w-full">
-    <div class="w-full">
-      <h1 class="text-5xl font-bold">Services</h1>
-      <div class="indicator m-8 w-full">
+  <div class="text-center w-full">
+      <h1 class="text-5xl font-bold mt-8">Services</h1>
+      <div class="indicator m-8 w-[calc(100%-4rem)]">
         <span class="indicator-item badge badge-success">Online</span>
-        <div class="bg-base-200 w-full rounded-box border-2 border-success items-start text-left p-4">
+        <div class="bg-base-200 rounded-box border-2 border-success items-start text-left p-4 w-full">
           <h2 class="text-xl font-bold mb-2">Server 1</h2>
           <div class="flex flex-wrap gap-4 w-full p-4">
             <!-- ==========  Card  ========= -->
             <div class="aura text-success">
               <a href="https://immich.janamrhein.ch/">
-                <div class="card bg-base-100 w-80 text-base-content shadow-sm">
+                <div class="card bg-base-100 w-80 h-[250px] text-base-content shadow-sm">
                   <figure>
-                    <img src="src/assets/immich-logo.svg" alt="Immich Logo" />
+                    <img src="src/assets/logos/immich.svg" class="block dark:hidden h-22 mt-2" alt="Immich Logo" />
+                    <img src="src/assets/logos/immich-dark.svg" class="hidden dark:block" alt="Immich Logo" />
                   </figure>
                   <div class="card-body">
                     <h2 class="card-title">
                       Immich
                       <div class="badge badge-success">Online</div>
                     </h2>
-                    <p>jdflajkf sdjkölf köj fslkfjs</p>
+                    <p>Self-hosted photo and video management solution</p>
                     <div class="card-actions justify-end">
                     </div>
                   </div>
@@ -119,8 +118,82 @@
               </a>
             </div>
 
+            <!-- ==========  Card  ========= -->
+            <div class="aura text-success">
+              <a href="https://n8n.janamrhein.ch/">
+                <div class="card bg-base-100 w-80 h-[250px] text-base-content shadow-sm">
+                  <figure>
+                    <img src="src/assets/logos/n8n.svg" class="block dark:hidden h-20 mt-4" alt="n8n Logo" />
+                    <img src="src/assets/logos/n8n-dark.svg" class="hidden dark:block h-20 mt-4" alt="n8n Logo" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">
+                      n8n
+                      <div class="badge badge-success">Online</div>
+                    </h2>
+                    <p>Self-hosted AI agents and workflow automation platform</p>
+                    <div class="card-actions justify-end">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <!-- ==========  Card  ========= -->
+            <div class="aura text-success">
+              <a href="https://minecraft.janamrhein.ch/">
+                <div class="card bg-base-100 w-80 h-[250px] text-base-content shadow-sm">
+                  <figure>
+                    <img src="src/assets/logos/pelican.svg" class="h-20 mt-4" alt="Pelican Logo" />
+                  </figure>
+                  <div class="card-body">
+                    <h2 class="card-title">
+                      Pelican panel
+                      <div class="badge badge-success">Online</div>
+                    </h2>
+                    <p>Weboberfläche um Minecraft-Server zu erstellen, steuern und managen</p>
+                    <div class="card-actions justify-end">
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            
           </div>
         </div>
+      </div>
+  </div>
+
+<!-- =================  Minecraft  ========================= -->
+<div class="min-h-screen">
+  <video autoplay muted loop src="src/assets/minecraft.mp4"></video>
+  <div class="flex justify-between items-center p-8">
+    <h1 class="text-5xl font-bold">Minecraft Server</h1>
+    <div class="badge badge-error badge-xl">Offline</div>
+  </div>
+</div>
+
+<!-- =================  Kontakt  ========================= -->
+<div class="hero bg-base-200 min-h-screen">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <div class="text-center lg:text-left">
+      <h1 class="text-5xl font-bold">Kontakt</h1>
+      <p class="py-6">
+        Durchschnittliche Bearbeitungszeit: 3 Jahre, 7 Monate und 293 Tage
+      </p>
+    </div>
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+          <label class="label">Name</label>
+          <input type="text" class="input" placeholder="Name" />
+          <label class="label">Email</label>
+          <input type="email" class="input" placeholder="Email" />
+          <label class="label">Nachricht</label>
+          <textarea type="text" class="input h-16" placeholder="Ihre Nachricht..."></textarea>
+          <button class="btn btn-neutral mt-4">Senden</button>
+        </fieldset>
       </div>
     </div>
   </div>
@@ -178,5 +251,15 @@
   <aside>
     <p>Copyright © 2026 - All right reserved by Jan Amrhein</p>
   </aside>
-</footer>  </body>
+</footer>
+<script>
+  const themeController = document.querySelector(".theme-controller");
+  const updateTheme = () => {
+    document.documentElement.dataset.theme = themeController.checked ? "dark" : "light";
+  };
+
+  themeController.addEventListener("change", updateTheme);
+  updateTheme();
+</script>
+  </body>
 </html>
