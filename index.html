@@ -95,13 +95,13 @@
   <div class="text-center w-full" id="services">
       <h1 class="text-5xl font-bold mt-8">Services</h1>
       <div class="indicator m-8 w-[calc(100%-4rem)]">
-        <div class="bg-base-200 rounded-box border-2 border-warning items-start text-left p-4 w-full">
+        <div class="bg-base-200 rounded-box border-2 border-warning items-start text-left p-4 w-full" id="serveraura">
           <h2 class="text-xl font-bold mb-2">Server 1
-            <div class="badge badge-warning">Unbekannt</div>
+            <div class="badge badge-warning" id="serverbadge">Unbekannt</div>
           </h2>
           <div class="flex flex-wrap gap-4 w-full p-4">
             <!-- ==========  Card  ========= -->
-            <div class="">
+            <div id="immichaura">
               <a href="https://immich.janamrhein.ch/">
                 <div class="card bg-base-100 max-w-80 min-h-[250px] text-base-content shadow-sm">
                   <figure>
@@ -111,7 +111,7 @@
                   <div class="card-body">
                     <h2 class="card-title">
                       Immich
-                      <div class="badge badge-warning">Unbekannt</div>
+                      <div class="badge badge-warning" id="immichbadge">Unbekannt</div>
                     </h2>
                     <p>Self-hosted photo and video management solution</p>
                     <div class="card-actions justify-end">
@@ -122,7 +122,7 @@
             </div>
 
             <!-- ==========  Card  ========= -->
-            <div class="">
+            <div id="n8naura">
               <a href="https://n8n.janamrhein.ch/">
                 <div class="card bg-base-100 max-w-80 min-h-[250px] text-base-content shadow-sm">
                   <figure>
@@ -132,7 +132,7 @@
                   <div class="card-body">
                     <h2 class="card-title">
                       n8n
-                      <div class="badge badge-warning">Unbekannt</div>
+                      <div class="badge badge-warning" id="n8nbadge">Unbekannt</div>
                     </h2>
                     <p>Self-hosted AI agents and workflow automation platform</p>
                     <div class="card-actions justify-end">
@@ -143,7 +143,7 @@
             </div>
 
             <!-- ==========  Card  ========= -->
-            <div class="">
+            <div id="pelicanaura">
               <a href="https://minecraft.janamrhein.ch/">
                 <div class="card bg-base-100 max-w-80 min-h-[250px] text-base-content shadow-sm">
                   <figure>
@@ -152,7 +152,7 @@
                   <div class="card-body">
                     <h2 class="card-title">
                       Pelican panel
-                      <div class="badge badge-warning">Unbekannt</div>
+                      <div class="badge badge-warning" id="pelicanbadge">Unbekannt</div>
                     </h2>
                     <p>Weboberfläche um Minecraft-Server zu erstellen, steuern und managen</p>
                     <div class="card-actions justify-end">
@@ -173,7 +173,7 @@
   <video autoplay muted loop src="src/assets/minecraft.mp4"></video>
   <div class="flex justify-between items-center p-8">
     <h1 class="text-5xl font-bold">Minecraft Server</h1>
-    <div class="badge badge-warning badge-xl">Unbekannt</div>
+    <div class="badge badge-warning badge-xl" id="mcbadge">Unbekannt</div>
   </div>
 </div>
 
@@ -300,5 +300,6 @@
     });
   });
 </script>
+<script src="./src/statusapi.js"></script>
   </body>
 </html>
