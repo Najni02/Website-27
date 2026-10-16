@@ -36,7 +36,7 @@ async function reload() {
             editcard(data.plan, "plan");
             editcard(data.bluemap, "bm");
             const mcbadge = document.getElementById('mcbadge');
-            if (data.mc == 'Online') {
+            if (data.mc == 'true') {
                  await loadmc();
             } else if (data.mc == 'false') {
                 mcbadge.classList.remove('badge-warning');
