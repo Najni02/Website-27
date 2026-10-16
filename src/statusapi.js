@@ -78,6 +78,7 @@ async function loadmc() {
         mcbadge.innerHTML = "Online";
         document.getElementById('mcinfo').classList.remove('hidden');
 
+        document.getElementById('motd').innerHTML = data.motd.clean;
         document.getElementById('version').innerHTML = data.version.name_clean;
         document.getElementById('player').innerHTML = data.players.online + '/' + data.players.max;
     } else {
