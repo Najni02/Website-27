@@ -79,7 +79,7 @@ async function loadmc() {
         document.getElementById('mcinfo').classList.remove('hidden');
 
         document.getElementById('motd').innerHTML = data.motd.clean;
-        document.getElementById('version').innerHTML = data.version.name_clean;
+        document.getElementById('version').innerHTML = 26.2;
         document.getElementById('player').innerHTML = data.players.online + '/' + data.players.max;
     } else {
         mcbadge.innerHTML = 'Nicht öffentlich';
